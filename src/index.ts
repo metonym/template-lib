@@ -1,3 +1,5 @@
-import Component from './Component';
+function main() {
+  return true;
+}
 
-export default Component;
+export { main };
