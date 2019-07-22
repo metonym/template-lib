@@ -1,6 +1,6 @@
 # template-lib
 
-> Base template for npm libraries.
+> Base template for developing npm libraries.
 
 ## Overview
 
