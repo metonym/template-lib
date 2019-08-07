@@ -2,7 +2,7 @@
 
 [![Build Status](https://travis-ci.com/metonym/template-lib.svg?branch=master)](https://travis-ci.com/metonym/template-lib)
 
-> Base template for developing npm libraries.
+> Template for developing libraries in TypeScript.
 
 ## Overview
 

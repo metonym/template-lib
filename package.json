@@ -2,7 +2,7 @@
   "name": "template-lib",
   "version": "0.1.0",
   "license": "MIT",
-  "description": "Base template for developing npm libraries",
+  "description": "Template for developing libraries in TypeScript",
   "author": "Eric Liu (https://github.com/metonym)",
   "main": "./lib/index.js",
   "types": "./lib/index.d.ts",
