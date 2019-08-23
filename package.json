@@ -4,8 +4,8 @@
   "license": "MIT",
   "description": "Template for developing libraries in TypeScript",
   "author": "Eric Liu (https://github.com/metonym)",
-  "main": "./lib/index.js",
-  "types": "./lib/index.d.ts",
+  "main": "lib/index.js",
+  "types": "lib/index.d.ts",
   "scripts": {
     "develop": "tsc -w",
     "build": "rm -rf lib && tsc -p tsconfig.prod.json",
@@ -62,7 +62,7 @@
     "npm library"
   ],
   "files": [
-    "lib/"
+    "lib"
   ],
   "bugs": "https://github.com/metonym/template-lib/issues"
 }
