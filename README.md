@@ -3,33 +3,33 @@
 [![Build][build]][build-badge]
 [![Coverage][codecov-shield]][codecov]
 
-> Template for developing libraries in TypeScript.
+> Template for developing libraries in TypeScript and publishing on [npm](https://www.npmjs.com/).
 
-## Overview
+## Available Scripts
 
-### Develop
+### `yarn develop`
 
-This command builds the project in watch mode. The source (i.e. entry) is in `src`, which is outputted in the designated folder `lib`.
+Runs the project in development mode. TypeScript watches `src/` and rebuilds on changes.
 
-```bash
-yarn develop
+### `yarn build`
+
+Builds the project for production using `tsconfig.prod.json`. The extended configuration ignores `src/tests`.
+
+```json
+// tsconfig.prod.json
+{
+  "extends": ".",
+  "exclude": ["src/tests"]
+}
 ```
 
-### Build
+### `yarn lint`
 
-This command first removes the `lib` folder before building the project.
+Runs [TSLint](https://github.com/palantir/tslint) on `src/` and fixes errors (if fixable).
 
-```bash
-yarn build
-```
+### `yarn test`
 
-### Test
-
-This command runs tests located in the `src/tests` folder.
-
-```bash
-yarn test
-```
+Runs test using [Jest](https://jestjs.io/).
 
 ## Linting, formatting and committing
 
