@@ -33,7 +33,11 @@ To ensure that committed code follows conventions, this project uses `prettier`,
 
 ### `yarn test`
 
-Runs test using [Jest](https://jestjs.io/).
+Runs test using [Jest](https://jestjs.io/) and generates a code coverage report.
+
+### `yarn test:tdd`
+
+Runs tests in "Test-driven Development Mode."
 
 ## Publishing to NPM
 
