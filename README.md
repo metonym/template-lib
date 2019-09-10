@@ -27,13 +27,35 @@ Builds the project for production using `tsconfig.prod.json`. The extended confi
 
 Runs [TSLint](https://github.com/palantir/tslint) on `src/` and fixes errors (if fixable).
 
+#### Linting, formatting and committing
+
+To ensure that committed code follows conventions, this project uses `prettier`, `tslint` and git hooks (via `husky`) to automate the linting and formatting of code and commit messages.
+
 ### `yarn test`
 
 Runs test using [Jest](https://jestjs.io/).
 
-## Linting, formatting and committing
+## Publishing to NPM
 
-To ensure that committed code follows conventions, this project uses `prettier`, `tslint` and git hooks (via `husky`) to automate the linting and formatting of code and commit messages.
+You must create an NPM account before publishing packages on the NPM registry.
+
+In [package.json](package.json), customize the following metadata before publishing to NPM.
+
+```json
+{
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/{USER-NAME}/{REPO-NAME}.git"
+  },
+  "homepage": "https://github.com/{USER-NAME}/{REPO-NAME}",
+  "keywords": ["..."],
+  "bugs": "https://github.com/{USER-NAME}/{REPO-NAME}/issues"
+}
+```
+
+### `yarn publish`
+
+Runs the `prepublishOnly` command, which first builds the project for production before publishing the library.
 
 ## License
 
