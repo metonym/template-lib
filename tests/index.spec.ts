@@ -1,4 +1,4 @@
-import { main } from '..';
+import { main } from '../src';
 
 test('main', () => {
   expect(main()).toEqual(true);
