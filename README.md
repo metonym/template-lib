@@ -3,7 +3,7 @@
 [![Build][build]][build-badge]
 [![Coverage][codecov-shield]][codecov]
 
-> Template for developing libraries in TypeScript and publishing on [npm](https://www.npmjs.com/).
+> Template for developing libraries in TypeScript and publishing to [npm](https://www.npmjs.com/).
 
 ## Available Scripts
 
@@ -14,10 +14,6 @@ Builds the project for production.
 ### `yarn lint`
 
 Runs [TSLint](https://github.com/palantir/tslint) and fixes errors (if fixable).
-
-#### Linting, formatting and committing
-
-To ensure that committed code follows conventions, this project uses `prettier`, `tslint` and git hooks (via `husky`) to automate the linting and formatting of code and commit messages.
 
 ### `yarn test`
 
@@ -48,6 +44,10 @@ In [package.json](package.json), customize the following metadata before publish
 ### `yarn publish`
 
 Runs the `prepublishOnly` command, which first builds the project for production before publishing the library.
+
+## Linting, formatting and committing
+
+To ensure that committed code follows conventions, this project uses `prettier`, `tslint` and git hooks (via `husky`) to automate the linting and formatting of code and commit messages.
 
 ## License
 
