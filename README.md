@@ -7,25 +7,13 @@
 
 ## Available Scripts
 
-### `yarn develop`
-
-Runs the project in development mode. TypeScript watches `src/` and rebuilds on changes.
-
 ### `yarn build`
 
-Builds the project for production using `tsconfig.prod.json`. The extended configuration ignores `src/tests`.
-
-```json
-// tsconfig.prod.json
-{
-  "extends": ".",
-  "exclude": ["src/tests"]
-}
-```
+Builds the project for production.
 
 ### `yarn lint`
 
-Runs [TSLint](https://github.com/palantir/tslint) on `src/` and fixes errors (if fixable).
+Runs [TSLint](https://github.com/palantir/tslint) and fixes errors (if fixable).
 
 #### Linting, formatting and committing
 
