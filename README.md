@@ -5,6 +5,21 @@
 
 > Template for developing libraries in TypeScript and publishing to [npm](https://www.npmjs.com/).
 
+## Getting Started
+
+Clone the template:
+
+```bash
+git clone git@github.com:metonym/template-lib.git
+cd template-lib
+```
+
+Install its dependencies:
+
+```bash
+yarn install
+```
+
 ## Available Scripts
 
 ### `yarn build`
