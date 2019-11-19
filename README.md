@@ -11,10 +11,6 @@
 
 Builds the project for production.
 
-### `yarn lint`
-
-Runs [TSLint](https://github.com/palantir/tslint) and fixes errors (if fixable).
-
 ### `yarn test`
 
 Runs test using [Jest](https://jestjs.io/) and generates a code coverage report.
