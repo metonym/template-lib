@@ -1,5 +1,5 @@
-/node_modules
 /coverage
+/node_modules
 /lib
 .DS_Store
 yarn-debug.log*
