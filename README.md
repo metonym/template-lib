@@ -1,30 +1,20 @@
 # template-lib
 
 [![Build][build]][build-badge]
-[![Coverage][codecov-shield]][codecov]
 
 > Template for developing libraries in TypeScript and publishing to [npm](https://www.npmjs.com/).
 
 ## Getting Started
 
-Clone the template:
+Scaffold a new project using npx and degit:
 
 ```bash
-git clone git@github.com:metonym/template-lib.git
+npx degit metonym/template-lib template-lib
 cd template-lib
-```
-
-Install its dependencies:
-
-```bash
-yarn install
+yarn
 ```
 
 ## Available Scripts
-
-### `yarn build`
-
-Builds the project for production.
 
 ### `yarn test`
 
@@ -54,11 +44,7 @@ In [package.json](package.json), customize the following metadata before publish
 
 ### `yarn publish`
 
-Runs the `prepublishOnly` command, which first builds the project for production before publishing the library.
-
-## Linting, formatting and committing
-
-To ensure that committed code follows conventions, this project uses `prettier`, `tslint` and git hooks (via `husky`) to automate the linting and formatting of code and commit messages.
+Runs the `prepack` command, which first builds the project for production before publishing the library.
 
 ## License
 
@@ -66,5 +52,3 @@ To ensure that committed code follows conventions, this project uses `prettier`,
 
 [build]: https://travis-ci.com/metonym/template-lib.svg?branch=master
 [build-badge]: https://travis-ci.com/metonym/template-lib
-[codecov]: https://codecov.io/gh/metonym/template-lib
-[codecov-shield]: https://img.shields.io/codecov/c/github/metonym/template-lib.svg
